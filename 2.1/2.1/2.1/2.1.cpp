@@ -38,9 +38,8 @@ public:
 };
 
 
-int main()
-
-try {
+int main(){
+	try {
 	smart_array arr(5);
 	arr.add_element(1);
 	arr.add_element(4);
@@ -48,9 +47,10 @@ try {
 	arr.add_element(14);
 	arr.add_element(15);
 	std::cout << arr.get_element(1) << std::endl;
-}
-catch (const std::exception& ex) {
+	}	
+	catch (const std::exception& ex) {
 	std::cout << ex.what() << std::endl;
 
-	return 0;
+	}
+return 0;
 }
